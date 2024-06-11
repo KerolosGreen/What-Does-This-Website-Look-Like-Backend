@@ -1,8 +1,12 @@
 {
+  "name": "What-Does-This-Website-Look-Like",
+  "version": "1.0.0",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "node": "^20.14.0",
     "puppeteer": "^22.10.0"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }
