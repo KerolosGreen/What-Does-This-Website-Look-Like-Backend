@@ -19,7 +19,7 @@ app.post('/screenshot/',async(req,res)=>{
 
 
 async function Taking_screenshot(screen_width,screen_height,Link,ismobile,fullpage){
-    const browser = await puppeteer.launch({headless: true});
+    const browser = await puppeteer.launch({headless: true,args: ['--no-sandbox', '--disable-setuid-sandbox']});
     var timestamp = new Date().getTime();
     const image_name = 'Imgs/scr-'+String(timestamp).substring(8, 12)+'.png';
     const page = await browser.newPage();
