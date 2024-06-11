@@ -10,7 +10,7 @@
     "node": ">=14.x"
   },
   "scripts": {
-    "start": "node api/hello.js",
+    "start": "node index.js",
     "postinstall": "npx puppeteer install"
   }
 }
